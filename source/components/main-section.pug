@@ -1,0 +1,38 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.text-up
+        span.main-section__title-up.font-s-26
+          | Зарабатывайте 
+          br.no-br
+          span.font-w-semi-bold от 220 000 ₽ ежемесячно
+        span.main-section__title-down.font-s-50
+          span.font-w-regular на ремонте оргтехники 
+          br
+          span.font-w-bold.color-blue и заправке картриджей
+      .main-section__sub-title.font-s-22
+        img.main-section__sub-title-icon(src="images/main-section-sub-title-icon.svg" loading="lazy" width="34" height="34" alt="icon")
+        | Откройте сервисный центр 
+        br
+        | по франшизе предпринимателей, 
+        br
+        span.font-w-medium
+          | имеющих 15-ти летний опыт 
+          br
+          | ведения бизнеса в этой нише
+      .main-section__bottom
+        img.main-section__bottom-icon(src="images/main-section-bottom-icon.svg" loading="lazy" width="50" height="50" alt="icon")
+        .font-w-regular.font-s-18
+          | Получите подробную 
+          br.no-br
+          | презентацию франшизы 
+          br.no-br
+          | «ПРИНТЕРОК» в 1 клик
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1426" height="1016" alt="image")
+      img.main-section__img-flash(src="images/main-section-img-flash.png" loading="lazy" width="1920" height="583" alt="image")

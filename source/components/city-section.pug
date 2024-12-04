@@ -1,0 +1,32 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__box
+        .city-section__box-left
+          h2.city-section__title.font-s-50.text-up
+            span.font-w-bold.color-blue Присоединяйтесь
+            br
+            span.font-w-regular
+              | к франшизе 
+              br.no-br
+              | «ПРИНТЕРОК»
+          .city-section__sub-title
+            img.city-section__sub-title-icon(src="images/main-section-sub-title-icon.svg" loading="lazy" width="34" height="34" alt="icon")
+            .font-s-24
+              span.font-w-semi-bold и зарабатывайте от 2,6 млн
+              br
+              | чистой прибыли в год
+        .city-section__box-right
+          .font-s-18-city
+            | Проверьте, свободен ли ваш
+            br
+            | город для работы с нами
+          form.city-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Проверить
+      include ../components/footer.pug
+
+
+

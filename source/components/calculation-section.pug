@@ -1,0 +1,31 @@
+section.calculation-section
+  .wrapper
+    .calculation-section__container
+      h2.calculation-section__title.font-s-50.text-up
+        span.font-w-bold.color-blue Узнайте, сколько
+        br
+        span.font-w-regular вы будете зарабатывать
+      .calculation-section__block-calc
+        .calculation-section__block-left
+          select#population-select.calculation-section__select.font-w-medium.font-s-24
+            option(value="0" disabled selected) Численность вашего города:
+            option(value="500000") До 500 000 жителей
+            option(value="1000000") До 1 000 000 жителей
+            option(value="1000001") От 1 000 000 жителей
+        .calculation-section__block-right
+          .calculation-section__label.font-s-22
+            label(for="range-slider")
+              | Перетащите бегунок и узнайте, 
+              br.no-br
+              | какой будет прибыль в течение двух лет
+          .calculation-section__range.font-s-18-d
+            input#range-slider.slider(type="range" min="1" max="8" value="4")
+            div.slider-labels
+              each num, index in [3, 6, 9, 12, 15, 18, 21, 24]
+                span(data-index=index + 1)= num
+      .calculation-section__result.font-w-bold
+        .font-s-32
+          span Результат
+        .font-s-32
+          span#result
+          span.font-w-regular  ₽

@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Зарабатывайте от 220 000 ₽ ежемесячно на ремонте оргтехники и заправке картриджей. Откройте сервисный центр по франшизе предпринимателей, имеющих 15-ти летний опыт ведения бизнеса в этой нише")
+    meta(name="HandheldFriendly" content="True")
+    meta(name="MobileOptimized" content="width")
+
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+
+    link(rel="stylesheet", href="css/vendor.css")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/main.css")
+
+    block head
+      title «ПРИНТЕРОК» - Франшиза сервисного центра
+
+  body
+    block body
+    include ../components/privacy
+    include ../components/modal-form-agreement
+    include ../components/modal-form-plan
+
+    //- include ../components/modal-form-call-me
+    //- include ../components/modal-form-investments
+    //- include ../components/modal-form-city
+    //- include ../components/modal-form-format
+
+    block scripts
+      script(src='https://api-maps.yandex.ru/2.1/?apikey=c3472711-0044-40b4-92fe-e8200d2156a0&load=package.map&lang=ru-RU&ver=2.')
+      script(src="js/vendor.js")
+      script(src="js/validation.js")
+      script(src="js/feedback.js")
+      script(src="js/app.js")

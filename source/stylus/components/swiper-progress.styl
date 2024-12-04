@@ -1,0 +1,108 @@
+.swiper-progress-basic
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #d7d7d7
+  margin: 14px 0 20px 0
+  border-radius: 10px !important
+  +above($breakpoints.sm)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: linear-gradient(90deg, #f68a0e 0%, #ffab07 100%);
+
+/////////////////////////////////////////////////
+////////////////////////////////////////////////
+//////////////////////////////////////////////
+
+.bullet-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+  &--secondary
+    justify-content start
+    margin 15px 0 15px 35px
+
+.swiper-pagination-bullet
+  background-color #d7d7d7
+  width: 9px
+  height: 3px
+  border-radius: 3px
+  opacity: 1
+  position relative
+.swiper-pagination-bullet-active
+  transform: scale(1.5)
+  transition transform 0.8s
+  background-color: #008DD2
+
+// .desktop-pagination
+//   display: flex
+//   flex-direction: row
+//   justify-content center
+//   gap: 0px
+//   margin-top 10px
+//   +above($breakpoints.sm)
+//     display: none
+//     margin-top 20px
+//     gap: 12px
+//   +above($breakpoints.md)
+//     margin-top 25px
+//     gap: 16px
+//   +above($breakpoints.xxl)
+//     gap: 18px
+//     margin-top 30px
+// .swiper-pagination-bullet
+//   background-color #fff
+//   width: 7px
+//   height: 7px
+//   border-radius: 50%
+//   opacity: 1
+//   +above($breakpoints.sm)
+//     width: 8px
+//     height: 8px
+//   +above($breakpoints.md)
+//     width: 9px
+//     height: 9px
+//   +above($breakpoints.xxl)
+//     width: 10px
+//     height: 10px
+// .swiper-pagination-bullet-active
+//   background-color: #D11C17
+
+// .swiper-buttons-about
+//   display: none
+//   +above($breakpoints.sm)
+//     position: absolute
+//     z-index 1
+//     display: flex
+//     align-items: center
+//     justify-content center
+//     gap: 20px
+//     width 62px
+//     height: 62px
+//     border-radius: 50%
+//     background-color #D11C17
+//     left: 50%
+//     transform: translateX(-50%)
+//     bottom: 15px
+//   +above($breakpoints.md)
+//     bottom: 20px
+//   +above($breakpoints.xxl)
+//     bottom: 22px
+
+// .button-next,
+// .button-prev
+//   position relative
+//   transition transform 0.5s, top 0.8s
+//   background-color transparent
+//   &:hover
+//     transform: scale(1.1)
+//   &:active
+//     top: 3px
+//   img
+//     width 8px
+//     height: auto

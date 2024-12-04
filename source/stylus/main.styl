@@ -1,0 +1,63 @@
+@font-face
+  font-family 'Inter-Bold'
+  src url('../fonts/Inter-Bold.woff'), url('../fonts/Inter-Bold.woff2')
+  font-display swap
+@font-face
+  font-family 'Inter-Light'
+  src url('../fonts/Inter-Light.woff'), url('../fonts/Inter-Light.woff2')
+  font-display swap
+@font-face
+  font-family 'Inter-Medium'
+  src url('../fonts/Inter-Medium.woff'), url('../fonts/Inter-Medium.woff2')
+  font-display swap
+@font-face
+  font-family 'Inter-Regular'
+  src url('../fonts/Inter-Regular.woff'), url('../fonts/Inter-Regular.woff2')
+  font-display swap
+@font-face
+  font-family 'Inter-SemiBold'
+  src url('../fonts/Inter-SemiBold.woff'), url('../fonts/Inter-SemiBold.woff2')
+  font-display swap
+
+@font-face
+  font-family 'Montserrat-Medium'
+  src url('../fonts/Montserrat-Medium.woff'), url('../fonts/Montserrat-Medium.woff2')
+  font-display swap
+
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+body
+  margin 0 auto
+  font-size 18px
+  font-family 'Inter-Light'
+  font-weight 300
+  line-height 120%
+  color $color-black-text
+
+.layout
+  width 100%
+  height 100%
+  margin 0 auto
+  display flex
+  flex-direction column
+  overflow-x hidden
+.main
+  flex 1
+
+.wrapper
+  max-width 320px
+  margin 0 auto
+  padding 0 6px
+  width 100%
+  +above($breakpoints.sm)
+    max-width 750px
+    padding 0 12px
+  +above($breakpoints.md)
+    max-width 996px
+    padding 0 15px
+  +above($breakpoints.xxl)
+    padding 0 20px
+    max-width 1220px

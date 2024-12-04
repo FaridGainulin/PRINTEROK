@@ -1,0 +1,46 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-s-50.text-up
+        span.font-w-bold.color-blue Ключевые показатели 
+        br.no-br
+        span.font-w-regular франшизы
+      .finances-section__sub-title.font-s-22 На которые вы можете рассчитывать при запуске бизнеса
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="24" height="22" alt="icon")
+            .font-w-semi-bold.font-s-30 881 000 рублей
+            .finances-section__card-text.font-s-20-finances ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="24" height="22" alt="icon")
+            .font-w-semi-bold.font-s-30 с 1-го месяца
+            .finances-section__card-text.font-s-20-finances вы начнете <br> зарабатывать
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="24" height="22" alt="icon")
+            .font-w-semi-bold.font-s-30 220 000 рублей
+            .finances-section__card-text.font-s-20-finances ежемесячная <br> чистая прибыль
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="24" height="22" alt="icon")
+            .font-w-semi-bold.font-s-30 49 дней
+            .finances-section__card-text.font-s-20-finances для запуска <br> бизнеса
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="24" height="22" alt="icon")
+            .font-w-semi-bold.font-s-30 25%
+            .finances-section__card-text.font-s-20-finances рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="24" height="22" alt="icon")
+            .font-w-semi-bold.font-s-30 9 месяцев
+            .finances-section__card-text.font-s-20-finances срок окупаемости <br> одной точки
+        .bullet-pagination
+      .finances-section__bottom
+        .font-s-32
+          span.font-w-bold Узнайте, какие инвестиции 
+          br
+          span.font-w-regular потребуются для открытия
+        .font-s-18 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать

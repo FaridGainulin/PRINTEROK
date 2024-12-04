@@ -1,0 +1,82 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__bg-icon-1(src="images/about-section-bg-icon-1.png" loading="lazy" width="50" height="50" alt="icon")
+      img.about-section__bg-icon-2(src="images/about-section-bg-icon-2.png" loading="lazy" width="1077" height="563" alt="icon")
+      h2.about-section__title.font-s-50.text-up
+        span.font-w-regular Знаем, как развить 
+        br.no-br
+        span.font-w-bold.color-blue
+          | конкурентный 
+          br.no-br
+          | бизнес в этой 
+          br.no-br
+          | нише
+      .about-section__sub-title.font-s-22 и передадим свой опыт вам!
+      .about-section__cards-wrapper
+        img.about-section__cards-wrapper-icon(src="images/about-section-card-wrapper-icon.svg" loading="lazy" width="43" height="43" alt="icon")
+        .swiper-bullet
+          .about-section__cards.swiper-wrapper
+            .about-section__card.swiper-slide
+              img.about-section__card-icon(src="images/about-section-card-icon.svg" loading="lazy" width="15" height="15" alt="icon")
+              .about-section__card-num.font-w-semi-bold.font-s-36 01
+              .about-section__card-text.font-s-20-finances
+                span.font-w-semi-bold Мы ведем успешную работу уже с 2008 года 
+                br.no-br
+                | и открыли уже 4 прибыльных филиала сети, 
+                br.no-br
+                | что подтверждает эффективность нашей 
+                br.no-br
+                | бизнес-модели
+            .about-section__card.swiper-slide
+              img.about-section__card-icon(src="images/about-section-card-icon.svg" loading="lazy" width="15" height="15" alt="icon")
+              .about-section__card-num.font-w-semi-bold.font-s-36 02
+              .about-section__card-text.font-s-20-finances
+                span.font-w-semi-bold Детально проанализировали целевую 
+                br.no-br
+                span.font-w-semi-bold аудиторию 
+                | и точно знаем, кто наши клиенты 
+                br.no-br
+                | и какие услуги и товары пользуются 
+                br.no-br
+                | наибольшим спросом
+            .about-section__card.swiper-slide
+              img.about-section__card-icon(src="images/about-section-card-icon.svg" loading="lazy" width="15" height="15" alt="icon")
+              .about-section__card-num.font-w-semi-bold.font-s-36 03
+              .about-section__card-text.font-s-20-finances
+                span.font-w-semi-bold Знаем, как и где заказывать 
+                | по-настоящему 
+                br.no-br
+                | качественные расходные материалы для 
+                br.no-br
+                | работы, ремонта и продажи
+            .about-section__card.swiper-slide
+              img.about-section__card-icon(src="images/about-section-card-icon.svg" loading="lazy" width="15" height="15" alt="icon")
+              .about-section__card-num.font-w-semi-bold.font-s-36 04
+              .about-section__card-text.font-s-20-finances
+                span.font-w-semi-bold Тщательно продумали концепцию 
+                | и привлекаем 
+                br.no-br
+                | клиентов проверенными маркетинговыми 
+                br.no-br
+                | инструментами, которые реально работают
+            .about-section__card.swiper-slide
+              img.about-section__card-icon(src="images/about-section-card-icon.svg" loading="lazy" width="15" height="15" alt="icon")
+              .about-section__card-num.font-w-semi-bold.font-s-36 05
+              .about-section__card-text.font-s-20-finances
+                span.font-w-semi-bold Регулярно выходим на новые масштабы 
+                br.no-br
+                | и точно знаем, как умножать результаты 
+                br.no-br
+                | и прибыль, чему научим наших партнеров
+          .bullet-pagination
+      .about-section__text.font-s-32
+        span.font-w-bold Задайте любой вопрос 
+        br.no-br
+        span.font-w-regular о работе франшизы
+      form.about-section__form(data-feedback-form)
+        textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Задать вопрос
